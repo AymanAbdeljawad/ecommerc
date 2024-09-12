@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Payment Failed</title>
+    <meta name="description" content="Payment has failed. Please try again." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<div class="container">
+    <h1>Payment Failed</h1>
+    <p>We're sorry, but your payment could not be processed. Please try again later.</p>
+    <p><strong>Error Message:</strong> <span id="errorMessage"></span></p>
+    <a href="/" class="button">Return to Home</a>
+</div>
+<script>
+        // Populate dynamic error message, if needed
+        document.getElementById('errorMessage').textContent = /*[[${errorMessage}]]*/ 'Unknown error occurred';
+    </script>
+</body>
+</html>

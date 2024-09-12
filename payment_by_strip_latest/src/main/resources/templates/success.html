@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Success</title>
+</head>
+<body>
+<h1>Payment Successful!</h1>
+<p>Amount: <span th:text="${amount}"></span></p>
+<p>Product Name: <span th:text="${productName}"></span></p>
+</body>
+</html>
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="utf-8" />-->
+<!--    <title>Payment Successful</title>-->
+<!--    <meta name="description" content="Payment has been successfully completed." />-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1" />-->
+<!--    <link rel="stylesheet" href="/styles.css" />-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="container">-->
+<!--    <h1>Payment Successful!</h1>-->
+<!--    <p>Thank you for your payment. Your transaction has been completed successfully.</p>-->
+<!--    <p><strong>Amount Paid:</strong> <span id="amount"></span> USD</p>-->
+<!--    <p><strong>Product:</strong> <span id="productName"></span></p>-->
+<!--    <a href="/" class="button">Return to Home</a>-->
+<!--</div>-->
+<!--<script>-->
+<!--        // Populate dynamic data, if needed-->
+<!--        document.getElementById('amount').textContent = /*[[${amount}]]*/ '100.00';-->
+<!--        document.getElementById('productName').textContent = /*[[${productName}]]*/ 'Sample Product';-->
+<!--    </script>-->
+<!--</body>-->
+<!--</html>-->
